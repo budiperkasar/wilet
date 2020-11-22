@@ -1,6 +1,6 @@
 @extends('layouts.template')
 @section('content')
-<title>Data Transaksi | Loundry</title>
+<title>Data Transaksi | WiLet</title>
 <div class="row">
     <div class="col-md-8">
         <div class="card shadow mb-4">
@@ -27,9 +27,9 @@
                         <label for="">Paket</label>
                         <select name="paket_id" id="state" class="form-control" >
                         <option value="" disabled selected>Pilih Paket</option>
-                        
+
                         </select>
-                    </div>  
+                    </div>
                     <div class="form-group">
                         <label for="">Member</label>
                         <select name="member_id" class="form-control" id="">
@@ -77,20 +77,20 @@
                 <h6 class="m-0 font-weight-bold text-primary">Biaya</h6>
             </div>
             <div class="card-body">
-                
+
                     <input type="hidden" id="harga_paket">
 
                     <div class="form-group">
                         <label for="">Sub Total</label>
                         <input type="number" name="sub_total" readonly id="total" class="form-control" required>
                     </div>
-                   
+
                     <div class="form-group">
                         <label for="">Biaya Tambahan</label>
                         <input type="number" name="biaya_tambahan" value="0" onkeyup="hitung4();"  id="tambahan" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        
+
                         <label for="">Diskon (%)</label>
                         <input type="number" name="diskon" id="diskon" value="0" onkeyup="hitung4();" class="form-control" onKeyPress="if(this.value.length==2) return false;" required>
                     </div>
@@ -114,19 +114,19 @@
 @push('scripts')
 <script type="text/javascript">
     $('#country').change(function(){
-    var outletID = $(this).val();    
+    var outletID = $(this).val();
     if(outletID){
         $.ajax({
            type:"GET",
            url:"{{url('ambil')}}?outlet_paket_id="+outletID,
-           success:function(res){               
+           success:function(res){
             if(res){
                 $("#state").empty();
                 $("#state").append('<option></option>');
                 $.each(res,function(key,value){
                     $("#state").append('<option value="'+key+'">'+value+'</option>');
                 });
-           
+
             }else{
                $("#state").empty();
             }
@@ -134,24 +134,24 @@
         });
     }else{
         $("#state").empty();
-       
-    }      
+
+    }
    });
-   
+
 
    $('#state').change(function(){
-    var paketID = $(this).val();      
+    var paketID = $(this).val();
     if(paketID){
         $.ajax({
            type:"GET",
            url:"{{url('ambil2')}}?id_paket="+paketID,
-           success:function(res){               
+           success:function(res){
             if(res){
                 $("#harga_paket").empty();
                 $.each(res,function(key,value){
                     $("#harga_paket").val(value);
                 });
-           
+
             }else{
                $("#harga_paket").empty();
             }
@@ -159,8 +159,8 @@
         });
     }else{
         $("#harga_paket").empty();
-       
-    }      
+
+    }
    });
 
 function hitung2() {
@@ -190,7 +190,7 @@ function hitung4() {
     var diskon = nambah - nambah * c / 100;
     var pajak = diskon - diskon * d / 100;
 
-   
+
    $("#coba").val(diskon);
    $("#total_asli").val(pajak);
 }

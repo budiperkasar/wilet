@@ -82,7 +82,7 @@ class TransaksiController extends Controller
                 'biaya_tambahan' => $request->biaya_tambahan,
                 'diskon' => $request->diskon,
                 'pajak' => $request->pajak,
-                'status_pakaian' => 'baru',
+                'status_pemasangan' => 'baru',
                 'status_bayar'=>$request->status_bayar,
                 'user_id'=>Auth::user()->id,
             ]);
@@ -173,7 +173,7 @@ class TransaksiController extends Controller
     public function pakaian1($id)
     {
         $struk = DB::table('tb_transaksi')->where('id_transaksi',$id)->update([
-            'status_pakaian' => 'proses',
+            'status_pemasangan' => 'proses',
         ]);
 
         return redirect()->back()->with('update','Data Berhasil Di Ubah');
@@ -182,7 +182,7 @@ class TransaksiController extends Controller
     public function pakaian2($id)
     {
         $struk = DB::table('tb_transaksi')->where('id_transaksi',$id)->update([
-            'status_pakaian' => 'selesai',
+            'status_pemasangan' => 'selesai',
         ]);
 
         return redirect()->back()->with('update','Data Berhasil Di Ubah');
@@ -191,7 +191,7 @@ class TransaksiController extends Controller
     public function pakaian3($id)
     {
         $struk = DB::table('tb_transaksi')->where('id_transaksi',$id)->update([
-            'status_pakaian' => 'terhubung',
+            'status_pemasangan' => 'terhubung',
         ]);
 
         return redirect()->back()->with('update','Data Berhasil Di Ubah');

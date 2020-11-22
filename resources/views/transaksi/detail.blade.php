@@ -1,12 +1,12 @@
 @extends('layouts.template')
 @section('content')
-<title>Data Transaksi | Loundry</title>
+<title>Data Transaksi | WiLet</title>
 <div class="card shadow mb-4">
     <div class="card-header py-3">
         <h6 class="m-0 font-weight-bold text-primary">Detail Transaksi</h6>
     </div>
     <div class="card-body">
-       
+
             <div class="row">
             <div class="col-md-12">
                 <h2>{{$struk->nama_outlet}}</h2>
@@ -58,7 +58,7 @@
                             <td>:</td>
                             <td>{{$struk->batas_waktu}}</td>
                         </tr>
-                      
+
                     </table>
                 </div>
             </div>
@@ -97,7 +97,7 @@
                     </tr>
                 </tbody>
             </table>
-            
+
             <a href="/cetak/{{$struk->id_transaksi}}" class="btn btn-primary">Cetak Nota</a>
         </div>
     </div>

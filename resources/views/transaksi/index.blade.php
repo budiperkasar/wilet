@@ -1,6 +1,6 @@
 @extends('layouts.template')
 @section('content')
-<title>Data Transaksi | Loundry</title>
+<title>Data Transaksi | WiLet</title>
 <div class="card shadow mb-4">
     <div class="card-header py-3">
         <h6 class="m-0 font-weight-bold text-primary">Data Pemasangan Baru</h6>
@@ -40,17 +40,17 @@
                         <td>{{$u->nama_outlet}}</td>
                         <td>{{$u->nama_member}}</td>
                         <td>{{$u->tgl_transaksi}}</td>
-                        <td>{{$u->status_pakaian}}</td>
+                        <td>{{$u->status_pemasangan}}</td>
                         @if($u->status_bayar == 'belum_dibayar')
                         <td>Belum Dibayar</td>
                         @else
                         <td>Lunas</td>
                         @endif
-                        @if($u->status_pakaian == 'baru')
+                        @if($u->status_pemasangan == 'baru')
                         <td><a href="/transaksi/pakaian1/{{ $u->id_transaksi}}" class="btn btn-warning btn-sm">Proses</a></td>
-                        @elseif($u->status_pakaian=='proses')
+                        @elseif($u->status_pemasangan =='proses')
                         <td><a href="/transaksi/pakaian2/{{ $u->id_transaksi}}" class="btn btn-warning btn-sm">Selesai</a></td>
-                        @elseif($u->status_pakaian=='selesai')
+                        @elseif($u->status_pemasangan =='selesai')
                         <td><a href="/transaksi/pakaian3/{{ $u->id_transaksi}}" class="btn btn-warning btn-sm">Terhubung</a></td>
                         @else
                         <td> Terhubung</td>

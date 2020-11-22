@@ -1,9 +1,9 @@
 @extends('layouts.template')
 @section('content')
-<title>Dashboard | Loundry</title>
+<title>Dashboard | WiLet</title>
 
 @if( Session::get('berhasil') !="")
-<div class='alert alert-success'><center><b>{{Session::get('berhasil')}}</b></center></div>        
+<div class='alert alert-success'><center><b>{{Session::get('berhasil')}}</b></center></div>
 @endif
 <div class="row">
 
@@ -82,7 +82,7 @@
     </div>
     <div class="card-body">
     <div class="table-responsive">
-            
+
             <table id="dataTable" class="table table-bordered" cellspacing="0">
                 <thead>
                     <tr>
@@ -94,7 +94,7 @@
                         <th>Bayar</th>
                         <th>View</th>
                     </tr>
-                   
+
                 </thead>
                 <tbody>
                     @foreach ($transaksi as $i => $u)
@@ -103,7 +103,7 @@
                         <td>{{$u->nama_outlet}}</td>
                         <td>{{$u->kode_invoice}}</td>
                         <td>{{$u->tgl_transaksi}}</td>
-                        <td>{{$u->status_pakaian}}</td>
+                        <td>{{$u->status_pemasangan}}</td>
                         @if($u->status_bayar == 'belum_dibayar')
                         <td>Belum Dibayar</td>
                         @else

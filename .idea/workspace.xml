@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6b6c4e5-6b3d-42a0-a05c-047998ff17bd" name="Default Changelist" comment="" />
+    <list default="true" id="d6b6c4e5-6b3d-42a0-a05c-047998ff17bd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TransaksiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TransaksiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/jenis/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/jenis/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/jenis/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/jenis/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/kasir/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kasir/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/kasir/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kasir/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/member/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/member/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/outlet/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/outlet/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/outlet/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/outlet/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/owner/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/owner/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/owner/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/owner/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/paket/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/paket/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/paket/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/paket/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/transaksi/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/transaksi/detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/transaksi/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/transaksi/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/transaksi/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/transaksi/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/transaksi/struk.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/transaksi/struk.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/transaksi/tambah.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/transaksi/tambah.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -161,7 +184,9 @@
       <workItem from="1605088661894" duration="425000" />
       <workItem from="1605113824012" duration="761000" />
       <workItem from="1605244056014" duration="108000" />
-      <workItem from="1605286934215" duration="1391000" />
+      <workItem from="1605286934215" duration="2884000" />
+      <workItem from="1605311678499" duration="171000" />
+      <workItem from="1606000523603" duration="1128000" />
     </task>
     <servers />
   </component>
@@ -169,9 +194,9 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="187" width="598" height="490" key="find.popup" timestamp="1605074742839">
+    <state x="421" y="187" width="598" height="548" key="find.popup" timestamp="1606002495744">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state x="421" y="187" width="598" height="490" key="find.popup/0.23.1440.819@0.23.1440.819" timestamp="1605074742839" />
+    <state x="421" y="187" width="598" height="548" key="find.popup/0.23.1440.819@0.23.1440.819" timestamp="1606002495744" />
   </component>
 </project>

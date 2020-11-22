@@ -1,6 +1,6 @@
 @extends('layouts.template')
 @section('content')
-<title>Data Outlet | Loundry</title>
+<title>Data Outlet | WiLet</title>
 <div class="card shadow mb-4">
     <div class="card-header py-3">
         <h6 class="m-0 font-weight-bold text-primary">Data Outlet</h6>
@@ -8,10 +8,10 @@
     <div class="card-body">
         <div class="table-responsive">
             @if( Session::get('masuk') !="")
-            <div class='alert alert-success'><center><b>{{Session::get('masuk')}}</b></center></div>        
+            <div class='alert alert-success'><center><b>{{Session::get('masuk')}}</b></center></div>
             @endif
             @if( Session::get('update') !="")
-            <div class='alert alert-success'><center><b>{{Session::get('update')}}</b></center></div>        
+            <div class='alert alert-success'><center><b>{{Session::get('update')}}</b></center></div>
             @endif
             <button class="btn btn-success" data-toggle="modal" data-target="#tambah">Tambah Data</button>
             <br>
