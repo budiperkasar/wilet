@@ -45,6 +45,7 @@ class TransaksiController extends Controller
                 ->join('tb_member', function($join){
                     $join->on('tb_transaksi.member_id','=','tb_member.id_member');
                 })
+                ->orderBy('id_transaksi', 'desc')
                 ->get();
 
 
